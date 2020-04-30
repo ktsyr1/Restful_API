@@ -1,6 +1,8 @@
 
 var mongoose = require('mongoose');
-const uri =  process.env.DB_URL || 'mongodb+srv://ktsyr1:idlibtp123@cluster0-6xfyu.mongodb.net/test?retryWrites=true&w=majority';
+const uri =  process.env.DB_URL 
+    // || 'mongodb+srv://ktsyria:j83XxiNsNQYz!Me@cluster0-6xfyu.mongodb.net/test?retryWrites=true&w=majority'
+    ||'mongodb://localhost:27017/app'
 
 mongoose.connect(uri, {
     useNewUrlParser: true,
